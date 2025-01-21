@@ -23,13 +23,57 @@ function Home() {
             </div>
           </div>
         </section>
+        <section className="solution">
+          <div className="solution-content">
+            <p>
+              Loneliness and Social Isolation have become increasingly prevalent,
+              <br />
+              with many <b>struggling to find meaningful and authentic connections</b>.
+              <br />
+              <br />
+              There is a need for a <b>solution that brings people together through</b>
+              <br />
+              <b>shared exploration, co-collaboration, and adventure</b>, helping users
+              <br /> discover new friendships, connect with their surroundings, and deepen
+              <br />
+              their sense of belonging.
+            </p>
+            <button className="cta-button">The Solution</button>
+          </div>
+        </section>
         <Principles />
         <div className="about-founder">
-          <h2>Here from our Founder</h2>
+          <h2>Hear from our Founder</h2>
           <h1>
             <b>Alex Aragon</b>
           </h1>
         </div>
+      </div>
+      <div>
+        <section className="about">
+          <div className="about-content">
+            <p>
+              At WUD!, we strive to create a social platform that encourages people to
+              further
+              <br />
+              develop their community by sharing their presence and by experiencing
+              wonderful
+              <br />
+              moments together through activities and events.
+              <br />
+              <br />
+              The WUD! team is committed to help people plant a seed of their own to make
+              real
+              <br />
+              positive change happen for all others, similar or distinct to their own
+              individual.
+              <br />
+              We hope to help you find and build a place where you thrive with WUD!
+            </p>
+            <br />
+            <button className="cta-button">Read our story</button>
+          </div>
+        </section>
       </div>
     </>
   );

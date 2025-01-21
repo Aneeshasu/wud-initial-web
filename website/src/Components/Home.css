@@ -47,7 +47,7 @@
 }
 
 .cta-button {
-  background-color: #ff5733;
+  background-color: #f2583e;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -74,4 +74,44 @@
 
 .about-founder h1 {
   margin-left: 20px;
+}
+
+.about-content{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  background: transparent;
+  width: 50%;
+  font-size: large;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 50px;
+  /* background: transparent;
+  width: 50%; */
+}
+
+.solution{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5px; */
+  /* margin-bottom: 50px; */
+  /* background: transparent;
+  width: 50%; */
+}
+
+.solution-content{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  background: transparent;
+  width: 50%;
+  font-size: large;
 }
