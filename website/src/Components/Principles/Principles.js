@@ -41,26 +41,28 @@ const principlesData = [
 
 const Principles = () => {
   return (
-    <section className="principles">
-      <h2>
-        Our Guiding Principles for <strong>Connection, Trust, & Growth</strong>
-      </h2>
-      <p className="principles-description">
-        At WUD!, our mission is to bring people together by making it effortless to
-        connect, engage, and build meaningful relationships through events and
-        community-driven activities.
-      </p>
-      <div className="principles-grid">
-        {principlesData.map((principle, index) => (
-          <PrincipleCard
-            key={index}
-            image={principle.image}
-            title={principle.title}
-            description={principle.description}
-          />
-        ))}
-      </div>
-    </section>
+    <div className="principles-container">
+      <section className="principles">
+        <h2>
+          Our Guiding Principles for <strong>Connection, Trust, & Growth</strong>
+        </h2>
+        <p className="principles-description">
+          At WUD!, our mission is to bring people together by making it effortless to
+          connect, engage, and build meaningful relationships through events and
+          community-driven activities.
+        </p>
+        <div className="principles-grid">
+          {principlesData.map((principle, index) => (
+            <PrincipleCard
+              key={index}
+              image={principle.image}
+              title={principle.title}
+              description={principle.description}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

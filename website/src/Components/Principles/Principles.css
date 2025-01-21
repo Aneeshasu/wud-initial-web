@@ -1,11 +1,23 @@
 .principles {
   text-align: center;
   padding: 100px 150px;
-  background-color: transparent;
+  /* background-color: #FFFFFF; */
+  background-color: rgba(255, 255, 255, 0.35); /* 85% opaque white */
+
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 150px;
+  /* margin: 150px; */
+  /* width: 60%; */
+  /* margin-left:10%; */
   border: 3px solid rgba(0, 0, 0);
+  justify-content: center;
+}
+
+.principles-container {
+  margin: 0 auto;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .principles h2 {
@@ -50,6 +62,7 @@
   border-radius: 10px 10px 0px 0px;
   margin-bottom: 15px;
   /* border: 2px solid rgba(0, 0, 0); */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 70%);
 }
 
 .principle h3 {
