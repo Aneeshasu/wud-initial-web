@@ -1,0 +1,41 @@
+.events-section {
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  height: 300px; /* Controls the height of the rectangle */
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background-color: #E6D0FF;
+  margin-bottom: 250px;
+  
+}
+
+.events-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+}
+
+.cards-wrapper {
+  position: absolute;
+  top: 60%; /* Adjust this value as needed to position the cards */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+  } 
+ }

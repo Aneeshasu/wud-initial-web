@@ -2,9 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(white, #d2a9ff);
+    /* background: linear-gradient(white, #d2a9ff); */
     padding: 40px;
   }
+
+.wud-app{
+  background: linear-gradient(white, #d2a9ff);
+  min-height: 100vh;
+}
   
   .hero-card2 {
     display: flex;

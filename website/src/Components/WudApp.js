@@ -1,9 +1,14 @@
 import React from "react";
 import "./WudApp.css";
+import EventsSection from "./EventSection/EventSection";
+import FeatureSection from "./FeatureSection/FeatureSection";
+import uniqueExp from "../Assets/uniqueExp.png";
+import peopleAround from "../Assets/peopleAround.png";
+import socialCalendar from "../Assets/socialCalendar.png";
 
 const WudApp = () => {
   return (
-    <div>
+    <div className="wud-app">
       <section className="hero-section2">
         <div className="hero-card2">
           <img src="/iMockup2.png" alt="WUD App" className="hero-image2" />
@@ -32,6 +37,22 @@ const WudApp = () => {
           </div>
         </div>
       </section>
+      <EventsSection />
+      <FeatureSection
+        title="EXPLORE UNIQUE EXPERIENCES"
+        description="With WUD, we want to encourage people to discover their individuality by exploring and potentially trying different activities and immersing themselves in whatever community they may desire on our platform."
+        image={uniqueExp}
+      />
+      <FeatureSection
+        title="MAINTAIN A HEALTHY SOCIAL CALENDAR"
+        description="With WUD!, we want to help you better create a network of diverse individuals who are authentic, yet also share some values, who they choose to surround themselves with, and who they invite into their own network/community."
+        image={socialCalendar}
+      />
+      <FeatureSection
+        title="MEET AUTHENTIC PEOPLE AROUND YOU"
+        description="With WUD!, we want to encourage individuality through retro/introspection, involvement, yet room for personal reflection and growth to then adapt and innovate their own person and character to become better versions of themself over time."
+        image={peopleAround}
+      />
     </div>
   );
 };

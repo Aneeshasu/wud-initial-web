@@ -1,0 +1,77 @@
+/* Outer container with background */
+.feature-section {
+    background-color: #ffffff;
+    /* padding: 60px 20px; */
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    overflow: visible; /* Allow image to pop out from the top if needed */
+    margin-bottom: 150px;
+  }
+  
+  /* Inner container to control layout and max width */
+  .feature-section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Puts text right after the image */
+    gap: 240px;                   /* Space between image and text */
+    position: relative;
+    max-width: auto;          /* Keep content from stretching too wide */
+    margin: 0 auto;             /* Center the inner container horizontally */
+    /* padding-left: 150px; */
+  }
+  
+  /* Reverse layout if needed */
+  .feature-section.reverse .feature-section-inner {
+    flex-direction: row-reverse;
+  }
+  
+  .feature-image {
+    position: relative;
+    flex-shrink: 0; /* Keep the image from shrinking too small */
+    
+  }
+  
+  .feature-image img {
+    width: 250px;          /* Adjust as needed */
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -50px;            /* Moves image above container if you want it to pop out */
+  }
+  
+  .feature-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .feature-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .feature-section-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-section.reverse .feature-section-inner {
+      flex-direction: column;
+    }
+  
+    /* Let the image pop out slightly less on smaller screens */
+    .feature-image img {
+      top: -20px;
+    }
+  }
+  
